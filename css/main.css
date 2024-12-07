@@ -1,5 +1,35 @@
+body{
+    margin: 0;
+    padding: 0;
+}
 
+.navbar{
+    padding-left: 10%;
+    padding-right: 10%;
+}
 
-.nav-item{
-    padding: 50%;
+.carousel-item{
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+.row img{
+    width: 40%;
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 500px;
+}
+
+.carousel-item img {
+    object-fit: cover;             
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    transform: translateY(-50%);
+    text-align: left; 
 }
