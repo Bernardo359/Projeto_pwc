@@ -4,15 +4,21 @@ body{
 }
 
 .navbar{
-    padding-left: 10%;
-    padding-right: 10%;
+    display: flex;
+    align-items: center;
+    padding-left: 15%;
+    padding-right: 15%;
     background-color: #f8f9fa;
-    font-size: 1.5rem;
+    font-size: 1.0rem;
     border-bottom: 1px solid #ddd;
+    height: 9%;
+}
+
+.nav-item{
+    padding-inline-start: 10%;
 }
 
 .navbar-nav .nav-link {
-    margin-right: 15px;
     color: #555;
     transition: color 0.3s ease; /* Transição suave para hover */
 }
@@ -22,8 +28,8 @@ body{
 }
 
 .navbar-brand img {
-    max-height: 75px;
-    max-width: 200px;
+    max-height: 65px;
+    max-width: 150px;
 }
 
 .carousel-item{
@@ -40,7 +46,8 @@ body{
 }
 
 .carousel-item img {
-    object-fit: cover;             
+    object-fit: cover;
+    margin-top: 20px;       
 }
 
 .carousel-caption {
@@ -52,3 +59,120 @@ body{
     text-align: left; 
 }
 
+.slider_session{
+    background-color: rgb(235, 235, 235);
+}
+
+.card_section{
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.text{
+    display: flex;
+        align-items: center;
+        flex-direction: column;
+}
+
+.cards{
+    display: flex;
+    margin: 5%;
+}
+
+.card{
+    padding: 2%;
+    align-items:  center;
+}
+
+.row > .col-md-4 {
+    margin-bottom: 30px;
+}
+
+.banner_section {
+    height: 50%;
+    background-image: url("/img/paisagem.avif");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    justify-content: center;
+}
+
+.banner_section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.banner_section .text {
+    position: relative; 
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: white;
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+.team-section {
+    padding: 50px 0;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.team-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.team-card {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.team-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.team-card-body {
+    padding: 20px;
+}
+
+.team-card-body h5 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.team-card-body p {
+    color: #6c757d;
+    margin-bottom: 20px;
+}
+
+.team-card-body .btn {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+.team-card-body .btn:hover {
+    background-color: #0056b3;
+}
