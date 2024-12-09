@@ -1,9 +1,9 @@
-body{
+body {
     margin: 0;
     padding: 0;
 }
 
-.navbar{
+.navbar {
     display: flex;
     align-items: center;
     padding-left: 15%;
@@ -14,13 +14,14 @@ body{
     height: 9%;
 }
 
-.nav-item{
+.nav-item {
     padding-inline-start: 10%;
 }
 
 .navbar-nav .nav-link {
     color: #555;
-    transition: color 0.3s ease; /* Transição suave para hover */
+    transition: color 0.3s ease;
+    /* Transição suave para hover */
 }
 
 .navbar-nav .nav-link:hover {
@@ -32,11 +33,12 @@ body{
     max-width: 150px;
 }
 
-.carousel-item{
+.carousel-item {
     margin-left: 300px;
     margin-bottom: 100px;
 }
-.row img{
+
+.row img {
     width: 40%;
     height: 100%;
 }
@@ -47,7 +49,7 @@ body{
 
 .carousel-item img {
     object-fit: cover;
-    margin-top: 20px;       
+    margin-top: 20px;
 }
 
 .carousel-caption {
@@ -56,37 +58,42 @@ body{
     left: 0;
     right: 0;
     transform: translateY(-50%);
-    text-align: left; 
+    text-align: left;
 }
 
-.slider_session{
+.slider_session {
     background-color: rgb(235, 235, 235);
+    font-size: 20px;
 }
 
-.card_section{
+.slider_session h2{
+    font-size: 50px;
+}
+
+.card_section {
     padding: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.text{
+.text {
     display: flex;
-        align-items: center;
-        flex-direction: column;
+    align-items: center;
+    flex-direction: column;
 }
 
-.cards{
+.cards {
     display: flex;
     margin: 5%;
 }
 
-.card{
+.card {
     padding: 2%;
-    align-items:  center;
+    align-items: center;
 }
 
-.row > .col-md-4 {
+.row>.col-md-4 {
     margin-bottom: 30px;
 }
 
@@ -111,7 +118,7 @@ body{
 }
 
 .banner_section .text {
-    position: relative; 
+    position: relative;
     z-index: 2;
     display: flex;
     align-items: center;
@@ -175,4 +182,104 @@ body{
 
 .team-card-body .btn:hover {
     background-color: #0056b3;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    justify-content: center;
+}
+
+.card {
+    border: none;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card .info {
+    padding: 20px;
+    text-align: center;
+}
+
+.card h2 {
+    margin: 10px 0;
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.card p {
+    margin: 0;
+    font-size: 1rem;
+    color: #777;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+
+footer a {
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffc107; /* Cor dourada no hover */
+}
+
+footer .bi {
+    fill: #ffffff;
+    transition: fill 0.3s ease;
+}
+
+footer .bi:hover {
+    fill: #ffc107;
+}
+
+.footer_section{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column; 
+}
+
+.footer_section .nav-item{
+    align-items: center;
+}
+
+.social-icons a {
+    font-size: 1.5rem; /* Tamanho dos ícones */
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+}
+
+.color{
+    background-color:  rgb(235, 235, 235);;
 }
