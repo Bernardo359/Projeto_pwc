@@ -197,15 +197,6 @@ body {
     justify-content: center;
 }
 
-.container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1200px;
-    justify-content: center;
-}
-
 .card {
     border: none;
     background: #ffffff;
@@ -290,6 +281,12 @@ footer .bi:hover {
 
 .color{
     background-color:  rgb(235, 235, 235);;
+}
+
+.img-flag{
+    border-radius: 15px;
+    height: 500px;
+    width: 800px;
 }
 
 

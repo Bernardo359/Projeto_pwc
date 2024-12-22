@@ -18,6 +18,6 @@ $(document).ready(function () {
             $('.lista-paises').append(clonecard);
         }
     }).fail(function (error) {
-        console.error('Erro ao buscar os dados da API:', error);
+        console.error('Erro ao procurar os dados na API:', error);
     });
 });
