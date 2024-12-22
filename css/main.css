@@ -18,6 +18,10 @@ body {
     padding-inline-start: 10%;
 }
 
+.nav-button{
+    padding-inline-start: 10%;
+}
+
 .navbar-nav .nav-link {
     color: #555;
     transition: color 0.3s ease;
@@ -98,12 +102,12 @@ body {
 }
 
 .banner_section {
-    height: 50%;
-    background-image: url("/img/paisagem.avif");
+    height: 300px;
+    background-image: url("/img/paisagem.jpg");
     background-size: cover;
     background-position: center;
     position: relative;
-    justify-content: center;
+    justify-content: center;    
 }
 
 .banner_section::before {
@@ -234,6 +238,10 @@ body {
     color: #777;
 }
 
+.card a{
+    text-decoration: none;
+}
+
 .card:hover {
     transform: translateY(-10px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -283,3 +291,5 @@ footer .bi:hover {
 .color{
     background-color:  rgb(235, 235, 235);;
 }
+
+
