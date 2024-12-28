@@ -199,7 +199,7 @@ body {
 
 .card {
     border: none;
-    background: #ffffff;
+    background: #fafafa;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     width: 300px;
