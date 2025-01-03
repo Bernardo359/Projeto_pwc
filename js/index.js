@@ -8,6 +8,7 @@ $(document).ready(function () {
         method: "GET",
         url: "https://restcountries.com/v3.1/all",
     }).done(function (dados) {
+        
 
         function getRandomItems(array, count) {
             const shuffled = array.sort(() => 0.5 - Math.random());
@@ -16,15 +17,21 @@ $(document).ready(function () {
 
         const randomCountries = getRandomItems(dados, 3);
 
+        
+
         randomCountries.forEach(function(country) {
             var clonecard = CloneOriginalCard.clone();
 
+            
             $('.card-image', clonecard).attr('src', country.flags.png);
             $('.card-info h2', clonecard).text(country.name.common);
+            
 
             // Adicionar evento de clique no botão de favorito
             $('.fav-btn', clonecard).on('click', function(e) {
                 e.preventDefault();
+                e.stopPropagation();
+
                 var icon = $(this).find('i');
                 var pais = {
                     titulo: $(this).closest('.card').find('h2').text(),

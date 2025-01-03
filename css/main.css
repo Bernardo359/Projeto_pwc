@@ -19,7 +19,7 @@ body {
 }
 
 .nav-button{
-    padding-inline-start: 10%;
+    padding-left: 10%;
 }
 
 .navbar-nav .nav-link {
@@ -238,6 +238,33 @@ body {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
+.card-header {
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Ou use justify-content: flex-start; para aproximar os itens */
+    gap: 10px; /* Espaço entre o título e a estrela */
+}
+
+.card-header h2 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+    flex-grow: 1; /* Faz o título ocupar mais espaço, se necessário */
+}
+
+.card-header .fav-btn {
+    color: #777;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    text-decoration: none;
+}
+
+.card-header .fav-btn:hover {
+    color: #007bff;
+}
+
+
 
 footer a {
     transition: color 0.3s ease;
@@ -288,5 +315,7 @@ footer .bi:hover {
     height: 500px;
     width: 800px;
 }
+
+
 
 

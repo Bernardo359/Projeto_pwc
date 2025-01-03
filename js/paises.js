@@ -13,7 +13,9 @@ $(document).ready(function () {
                 'titulo': dados[i].name.common,
                 'imagem': dados[i].flags.png
             };
-
+            //direciona para detalhes
+            $('a:first', clonecard).attr('href', `detalhesPaises.html?name=${encodeURIComponent(dados[i].name.common)}`);
+            
             $('.card-image', clonecard).attr('src', dados[i].flags.png);
             $('.card-info h2', clonecard).text(dados[i].name.common);
 
@@ -25,9 +27,11 @@ $(document).ready(function () {
                 $('.fav-btn i', clonecard).addClass('text-warning');
             }
 
-            // Adicionar evento de clique no botão de favorito
+            // Modificar o evento de clique do botão favorito para evitar redirecionamento
             $('.fav-btn', clonecard).on('click', function(e) {
                 e.preventDefault();
+                e.stopPropagation(); // Impede que o clique se propague para a página detalhes
+                
                 var icon = $(this).find('i');
                 var pais = {
                     titulo: $(this).closest('.card').find('h2').text(),

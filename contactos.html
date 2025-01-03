@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <title>Contactos</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="img/logoIPL.png" alt="LOGO">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="paises.html">Países</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="favoritos.html"><i class="fas fa-star"></i></a>
+                        </li>
+                        <button class="nav-button">
+                            <a class="nav-link" href="contactos.html">Contactos</a>
+                        </button>
+                        
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="contact-section py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-4">
+                    <h2 class="mb-4">Contacte-nos</h2>
+                    <p>Tem dúvidas ou sugestões? Preencha o formulário e entraremos em contacto o mais brevemente possível.</p>
+                    <p><strong>Email:</strong> support@exploromundo.com</p>
+                    <p><strong>Telefone:</strong> +351 123 456 789</p>
+                    <p><strong>Endereço:</strong> Rua de Leiria, 123, Leiria</p>
+
+                    <a href="https://facebook.com" target="_blank" class="text-black mx-2" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-black mx-2" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-black mx-2" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-black mx-2" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+                <div class="col-lg-6">
+                    <form id="contact-form">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Nome</label>
+                            <input type="text" class="form-control" id="name" placeholder="Nome" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="oseuemail@exemplo.com" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Assunto</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Assunto da mensagem" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Escreva a sua mensagem aqui..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary w-100">Enviar</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="color text-black py-4">
+        <div class="container text-center">
+            <div class="footer_section">
+                <div class="social-icons mt-3">
+                    <a href="https://facebook.com" target="_blank" class="text-black mx-2" aria-label="Facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com" target="_blank" class="text-black mx-2" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" class="text-black mx-2" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" class="text-black mx-2" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+
+            <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+                <li class="nav-item"><a href="index.html" class="nav-link px-2">Home</a></li>
+                <li class="nav-item"><a href="paises.html" class="nav-link px-2">Países</a></li>
+                <li class="nav-item"><a href="#" class="nav-link px-2">Loja</a></li>
+                <li class="nav-item"><a href="favoritos.html" class="nav-link px-2">Favoritos</a></li>
+                <li class="nav-item"><a href="contactos.html" class="nav-link px-2">Contactos</a></li>
+            </ul>
+
+
+            <p>&copy; 2024 Explora o Mundo. Todos os direitos reservados.</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+</html>
