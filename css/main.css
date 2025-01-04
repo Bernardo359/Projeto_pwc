@@ -312,6 +312,125 @@ footer .bi:hover {
     width: 800px;
 }
 
+.search-bar{
+    margin-left: auto;
+}
+
+/* Media Queries */
+
+/* Telas pequenas (mobile-first, até 576px) */
+@media (max-width: 576px) {
+    .navbar {
+        padding: 10px;
+        height: auto;
+    }
+
+    .navbar-brand img {
+        max-width: 120px;
+        max-height: 50px;
+    }
+
+    .nav-item {
+        padding-inline-start: 5%;
+    }
+
+    .carousel-item {
+        margin-left: 0;
+        margin-bottom: 50px;
+    }
+
+    .row img {
+        width: 100%;
+        height: auto;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .banner_section .text {
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
+    .team-card img {
+        height: 200px;
+    }
+
+    .team-card-body {
+        padding: 10px;
+    }
+
+    footer {
+        padding: 10px;
+    }
+}
+
+/* Telas médias (até 768px) */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 10px 5%;
+    }
+
+    .carousel-item {
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+
+    .row img {
+        width: 80%;
+        height: auto;
+    }
+
+    .carousel-inner {
+        height: 400px;
+    }
+
+    .slider_session h2 {
+        font-size: 40px;
+    }
+
+    .card_section {
+        padding: 10%;
+    }
+
+    .banner_section .text {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+}
+
+/* Telas grandes (acima de 1200px) */
+@media (min-width: 1200px) {
+    .navbar {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .carousel-item {
+        margin-left: 300px;
+        margin-bottom: 100px;
+    }
+
+    .row img {
+        width: 40%;
+        height: 100%;
+    }
+
+    .banner_section .text {
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .team-card img {
+        height: 300px;
+    }
+
+    .team-card-body {
+        padding: 20px;
+    }
+}
+
 
 
 

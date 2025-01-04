@@ -1,6 +1,6 @@
 $(document).ready(function () {
-    var CloneOriginalCard = $('.card.d-none').clone().removeClass('d-none');
-    $('.lista-paises').html('');
+    var CloneOriginalCard = $('.card.d-none').clone().removeClass('d-none'); //Dá clone ao card do html
+    $('.lista-paises').html(''); //Apaga o card do html
 
     $.ajax({
         method: "GET",
@@ -8,16 +8,17 @@ $(document).ready(function () {
     }).done(function (dados) {
         for (var i = 0; i < dados.length; i++) {
             var clonecard = CloneOriginalCard.clone();
+
+            var nomept = dados[i].translations?.por?.common; //Meter todos os nomes dos paises em PT
             
             var cardPaises = {
-                'titulo': dados[i].name.common,
-                'imagem': dados[i].flags.png
+                'titulo': dados[i].name.common, //
+                'imagem': dados[i].flags.png,
             };
-            //direciona para detalhes
-            $('a:first', clonecard).attr('href', `detalhesPaises.html?name=${encodeURIComponent(dados[i].name.common)}`);
             
-            $('.card-image', clonecard).attr('src', dados[i].flags.png);
-            $('.card-info h2', clonecard).text(dados[i].name.common);
+            $('a:first', clonecard).attr('href', `detalhesPaises.html?name=${encodeURIComponent(dados[i].name.common)}`); //direciona para detalhes
+            $('.card-image', clonecard).attr('src', dados[i].flags.png); 
+            $('.card-info h2', clonecard).text(nomept);
 
             // Verificar se o país já está nos favoritos
             var favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
@@ -67,8 +68,8 @@ function addFavoritos(cardPaises) {
 function removeFavoritos(cardPaises) {
     var favoritos = JSON.parse(localStorage.getItem('favoritos')) || [];
     
-    favoritos = favoritos.filter(function (item) {
-        return item.titulo !== cardPaises.titulo;
+    favoritos = favoritos.filter(function (pais) {
+        return pais.titulo !== cardPaises.titulo;
     });
     
     localStorage.setItem('favoritos', JSON.stringify(favoritos));
