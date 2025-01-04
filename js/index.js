@@ -19,12 +19,15 @@ $(document).ready(function () {
 
         
 
-        randomCountries.forEach(function(country) {
+        randomCountries.forEach(function(pais) {
             var clonecard = CloneOriginalCard.clone();
 
             
-            $('.card-image', clonecard).attr('src', country.flags.png);
-            $('.card-info h2', clonecard).text(country.name.common);
+            $('.card-image', clonecard).attr('src', pais.flags.png);
+            $('.card-info h2', clonecard).text(pais.name.common);
+
+            //redireciona para a página de detalhes
+            $('a:first', clonecard).attr('href', `detalhesPaises.html?name=${encodeURIComponent(pais.name.common)}`);
             
 
             // Adicionar evento de clique no botão de favorito
