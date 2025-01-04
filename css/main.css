@@ -18,6 +18,10 @@ body {
     padding-inline-start: 10%;
 }
 
+.nav-button{
+    margin-left: 10%;
+}
+
 .navbar-nav .nav-link {
     color: #555;
     transition: color 0.3s ease;
